@@ -1,0 +1,45 @@
+main {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.landing-page {
+    position: relative;
+    right: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background: url("/src/Assets/Images/Poster.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-page-contents {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    flex: 0 0 20%;
+}
+
+.pagination-con {
+    list-style: none;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.pag-link {
+    text-decoration: none;
+}

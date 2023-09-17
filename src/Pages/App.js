@@ -1,13 +1,14 @@
-import './App.css';
 import NavBar from '../Components/NavBar/Navbar';
+import Landing from '../Components/Landing/Landing';
+import MovieCard from '../Components/MovieCard/MovieCard';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className='container'>
-        <h1>Welcome to Movie Hub</h1>
-      </div>
+      <Landing />
+      <MovieCard />
     </div>
   );
 }

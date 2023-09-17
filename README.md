@@ -33,7 +33,7 @@ MovieHub is a web application that allows users to search for movies, view detai
 To run this project locally, follow these steps:
 
 1. Clone this repository:
-   `git clone`
+   `git clone https://github.com/Dprof-code/movie-hub.git`
 
 2 Install Dependencies (make sure you have NPM installed on your system):
 `npm install`
@@ -50,14 +50,14 @@ To run this project locally, follow these steps:
 
 ## Technologies Used
 
-    - ReactJS for building the user interface.
-    - Bootstrap for styling the application.
-    - TMDB API for movie data.
-    - Netlify for deployment.
+- ReactJS for building the user interface.
+- Bootstrap for styling the application.
+- TMDB API for movie data.
+- Netlify for deployment.
 
 ## Contributor
 
-    - [Adedamola Olawale](https://github.com/dprof-code)
+- [Adedamola Olawale](https://github.com/dprof-code)
 
 ## License
 

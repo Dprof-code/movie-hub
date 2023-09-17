@@ -1,0 +1,31 @@
+header {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    z-index: 2;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-wrap {
+    border: 1px solid red;
+    flex: 0 0 40%;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.input-box {
+    width: 95%;
+    border: 0;
+    background: none;
+}
+
+input:focus {
+    border: 0;
+    outline: 0;
+}

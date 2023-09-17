@@ -1,0 +1,21 @@
+<div className="container">
+            <nav className="navbar navbar-expand-sm container-fluid bg-body-tertiary">
+                <div className="container-fluid d-flex">
+                    <a className="navbar-brand" href="/">
+                        <Logo />
+                        MovieHub</a>
+
+                    <div className="nav-item search-wrap col-6">
+                        <form className="d-flex my-2 my-lg-0" role="search">
+                            <input className="form-control mr-sm-2 col-5" type="search" placeholder="What do you want to watch?" aria-label="Search" />
+                            <SearchIcon />
+                        </form>
+                    </div>
+
+                    <div>
+                        <a className="navbar-text me-2" href='/'>Sign In</a>
+                        <MenuIcon />
+                    </div>
+                </div>
+            </nav >
+        </div >
