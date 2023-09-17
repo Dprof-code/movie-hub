@@ -14,6 +14,7 @@ main {
     background: url("/src/Assets/Images/Poster.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .landing-page-contents {
