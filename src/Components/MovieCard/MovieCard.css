@@ -1,0 +1,17 @@
+.movies-list {
+    width: 100%;
+}
+
+.movies-list-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings {
+    display: inline;
+}
+
+.list-group-item {
+    display: inline;
+    border-bottom: 0;
+}

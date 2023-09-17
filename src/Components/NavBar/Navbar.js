@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className="">
             <header className=''>
-                <div className='container-fluid nav-con'>
+                <div className='container nav-con'>
                     <div>
                         <Logo />
                         <a href='/'>MovieHub</a>
