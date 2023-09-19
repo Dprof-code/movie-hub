@@ -9,7 +9,7 @@ const Landing = () => {
         <section className='landing-page' id='landingPage'>
             <div className='landing-page-contents container'>
                 <aside className='about'>
-                    <h1>John Wick</h1>
+                    <h1>John Wick 3 : Parabellum</h1>
                     <div className='ratings'>
                         <span><ImdbIcon />86.0 / 100</span>
                         <span><LikeIcon />97%</span>

@@ -15,3 +15,14 @@
     display: inline;
     border-bottom: 0;
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
