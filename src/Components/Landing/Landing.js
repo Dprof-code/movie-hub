@@ -1,7 +1,7 @@
 import '../Landing/Landing.css';
 import ImdbIcon from '../../Assets/IMDBLogo/ImdbLogo';
 import LikeIcon from '../../Assets/LikeIcon/LikeIcon';
-import PlayBtn from '../../Assets/PlayIcon/PlayIcon';
+//import PlayBtn from '../../Assets/PlayIcon/PlayIcon';
 
 const Landing = () => {
 
@@ -17,7 +17,7 @@ const Landing = () => {
                     <p>
                         John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
                     </p>
-                    <button type="button" class="btn btn-primary btn-lg"><PlayBtn />WATCH TRAILER</button>
+                    <button type="button" class="btn btn-primary btn-lg"><i className="fa-solid fa-play"></i>WATCH TRAILER</button>
 
                 </aside>
                 <aside className='pagination-links'>

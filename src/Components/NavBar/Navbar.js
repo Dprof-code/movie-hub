@@ -1,7 +1,7 @@
 import '../NavBar/Navbar.css'
 import Logo from '../Logo/Logo';
-import MenuIcon from '../../Assets/MenuBar/MenuBar';
-import SearchIcon from '../../Assets/SearchIcon/SearchIcon';
+//import MenuIcon from '../../Assets/MenuBar/MenuBar';
+//import SearchIcon from '../../Assets/SearchIcon/SearchIcon';
 
 const NavBar = () => {
     return (
@@ -16,14 +16,14 @@ const NavBar = () => {
                     <div className='search-wrap'>
                         <form>
                             <input className='input-box' type="search" placeholder="What do you want to watch?" aria-label="Search" />
-                            <SearchIcon />
+                            <i className="fa-solid fa-magnifying-glass"></i>
                         </form>
                     </div>
 
                     <nav>
                         <div>
                             <a className="navbar-text me-2" href='/'>Sign In</a>
-                            <MenuIcon />
+                            <i className="fa-solid fa-bars"></i>
                         </div>
                     </nav>
                 </div>

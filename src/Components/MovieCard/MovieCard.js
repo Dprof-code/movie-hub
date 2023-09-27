@@ -11,7 +11,7 @@ const MovieCard = () => {
         .catch(err => console.error(err));
 
     console.log(movieList);
-    const movieListDisplay = movieList.slice(0, 10);
+    const movieListDisplay = movieList.slice(0, 12);
 
     return (
         <section className='movies-list'>
