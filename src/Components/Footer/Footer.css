@@ -1,0 +1,18 @@
+.footer-contents {
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands {
+    margin: 0 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links li a {
+    text-decoration: none;
+}
