@@ -11,6 +11,7 @@ function App() {
         <Landing />
         <MovieCard />
       </main>
+      <Footer />
     </div>
   );
 }
