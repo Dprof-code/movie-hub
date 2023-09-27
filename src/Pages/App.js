@@ -1,6 +1,7 @@
 import NavBar from '../Components/NavBar/Navbar';
 import Landing from '../Components/Landing/Landing';
 import MovieCard from '../Components/MovieCard/MovieCard';
+import Footer from '../Components/Footer/Footer';
 import './App.css';
 
 function App() {
