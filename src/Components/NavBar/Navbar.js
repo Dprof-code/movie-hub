@@ -8,9 +8,9 @@ const NavBar = () => {
         <div className="">
             <header className=''>
                 <div className='container nav-con'>
-                    <div>
+                    <div className='logo-wrap'>
                         <Logo />
-                        <a href='/'>MovieHub</a>
+                        <a className='site-name' href='/'>MovieHub</a>
                     </div>
 
                     <div className='search-wrap'>

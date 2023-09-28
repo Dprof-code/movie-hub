@@ -1,19 +1,34 @@
 header {
+    color: #ffffff;
     width: 100vw;
     position: absolute;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.8rem;
     z-index: 2;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
 }
 
 .nav-con {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 .search-wrap {
-    border: 1px solid red;
+    border: 1px solid #ffffff;
     flex: 0 0 40%;
     align-items: center;
     border-radius: 4px;
@@ -22,10 +37,54 @@ header {
 .input-box {
     width: 95%;
     border: 0;
+    color: #ffffff;
     background: none;
 }
 
 input:focus {
-    border: 0;
+    border: 2px;
     outline: 0;
+}
+
+.navbar-text {
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.fa-bars {
+    background-color: #BE123C;
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+.fa-bars:hover {
+    background-color: #9F1239;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-wrap {
+        position: relative;
+        width: 400px;
+        border: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        border: 1px solid #ffffff;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+    }
+
+    .input-box {
+        width: 80%;
+    }
 }

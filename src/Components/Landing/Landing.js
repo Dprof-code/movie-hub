@@ -31,6 +31,8 @@ const Landing = () => {
                             <li class="pag-item"><a class="pag-link" href="/">1</a></li>
                             <li class="pag-item"><a class="pag-link" href="/">2</a></li>
                             <li class="pag-item"><a class="pag-link" href="/">3</a></li>
+                            <li class="pag-item"><a class="pag-link" href="/">4</a></li>
+                            <li class="pag-item"><a class="pag-link" href="/">5</a></li>
                             <li class="pag-item">
                                 <a class="pag-link" href="/" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>

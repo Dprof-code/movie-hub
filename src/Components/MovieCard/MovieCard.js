@@ -17,8 +17,8 @@ const MovieCard = () => {
         <section className='movies-list'>
             <div className='movies-list-page-contents container'>
                 <div className='movies-list-header'>
-                    <h2>Featured Movie</h2>
-                    <h4>See more &gt;</h4>
+                    <h2 className='movies-list-header-title'>Featured Movie</h2>
+                    <h4 className='movies-list-header-action'>See more &gt;</h4>
                 </div>
                 <div className="cards-container">
                     <div className="cards">

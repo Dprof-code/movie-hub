@@ -1,10 +1,25 @@
 .movies-list {
     width: 100%;
+    padding: 2rem;
 }
 
 .movies-list-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.movies-list-header-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.movies-list-header-action {
+    font-size: 18px;
+    font-weight: 500;
+    color: #BE123C;
+    cursor: pointer;
 }
 
 .ratings {
@@ -23,6 +38,25 @@
 }
 
 .card {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     cursor: pointer;
+    text-align: left;
+}
+
+.card-body {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.card-title {
+    color: #111827;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #111827;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
 }
