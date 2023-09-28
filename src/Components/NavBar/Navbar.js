@@ -22,7 +22,7 @@ const NavBar = () => {
 
                     <nav>
                         <div>
-                            <a className="navbar-text me-2" href='/'>Sign In</a>
+                            <a className="navbar-text me-2" href='/signin'>Sign In</a>
                             <i className="fa-solid fa-bars"></i>
                         </div>
                     </nav>

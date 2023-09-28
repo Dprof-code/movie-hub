@@ -12,6 +12,11 @@
     cursor: pointer;
 }
 
+.fa-brands:hover {
+    color: #BE123C;
+    transition: 1s all ease-in-out;
+}
+
 .footer-links {
     width: 100%;
     list-style: none;

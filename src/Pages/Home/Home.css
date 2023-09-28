@@ -11,13 +11,6 @@ html {
   box-sizing: inherit;
 }
 
-.App {
+.Home {
   text-align: center;
-}
-
-main {
-  width: 100%;
-  position: relative;
-  top: 0;
-  right: 0;
 }
