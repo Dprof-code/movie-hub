@@ -20,6 +20,7 @@
 .about {
     flex: 0 0 30%;
     text-align: left;
+    justify-content: flex-start;
 }
 
 h1 {
@@ -39,10 +40,12 @@ h1 {
     margin-right: 2rem;
 }
 
-p {
+.movie-desc {
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 500;
     margin: 1rem 0;
+    text-align: left;
 }
 
 .btn {

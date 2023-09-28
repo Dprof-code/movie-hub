@@ -14,7 +14,7 @@ const Landing = () => {
                         <span><ImdbIcon />86.0 / 100</span>
                         <span><LikeIcon />97%</span>
                     </div>
-                    <p>
+                    <p className='movie-desc'>
                         John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
                     </p>
                     <button type="button" class="btn btn-primary btn-lg"><i className="fa-solid fa-play"></i>WATCH TRAILER</button>
