@@ -4,21 +4,32 @@ import { useState } from 'react';
 const MovieCard = () => {
     const options = { method: 'GET', headers: { accept: 'application/json' } };
     const [movieList, setMovieList] = useState([]);
+    const [showFullList, setShowFullList] = useState(false);
+    const [fullMovieList, setFullMovieList] = useState([]);
 
     fetch('https://api.themoviedb.org/3/discover/movie?api_key=8afd0e6f5494488b938fbe20fac34938', options)
         .then(response => response.json())
-        .then(response => setMovieList(response.results))
+        .then(response => {
+            setMovieList(response.results);
+            setFullMovieList(response.results);
+        })
         .catch(err => console.error(err));
 
-    console.log(movieList);
-    const movieListDisplay = movieList.slice(0, 12);
+    //console.log(movieList);
+
+    const toggleFullList = () => {
+        setShowFullList(!showFullList);
+    };
+
+    const movieListDisplay = showFullList ? fullMovieList : movieList.slice(0, 10);
 
     return (
         <section className='movies-list'>
             <div className='movies-list-page-contents container'>
                 <div className='movies-list-header'>
                     <h2 className='movies-list-header-title'>Featured Movie</h2>
-                    <h4 className='movies-list-header-action'>See more &gt;</h4>
+                    <h4 className='movies-list-header-action' onClick={toggleFullList}>{showFullList ? 'See less  <' : 'See more >'}</h4>
+
                 </div>
                 <div className="cards-container">
                     <div className="cards">
