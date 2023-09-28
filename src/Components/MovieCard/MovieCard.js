@@ -1,27 +1,44 @@
 import '../MovieCard/MovieCard.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const MovieCard = () => {
-    const options = { method: 'GET', headers: { accept: 'application/json' } };
     const [movieList, setMovieList] = useState([]);
     const [showFullList, setShowFullList] = useState(false);
-    const [fullMovieList, setFullMovieList] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    fetch('https://api.themoviedb.org/3/discover/movie?api_key=8afd0e6f5494488b938fbe20fac34938', options)
-        .then(response => response.json())
-        .then(response => {
-            setMovieList(response.results);
-            setFullMovieList(response.results);
-        })
-        .catch(err => console.error(err));
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=8afd0e6f5494488b938fbe20fac34938');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setMovieList(data.results);
+                setLoading(false);
+            } catch (err) {
+                setError('Error fetching data');
+                setLoading(false);
+            }
+        };
 
-    //console.log(movieList);
+        fetchData();
+    }, []);
 
     const toggleFullList = () => {
         setShowFullList(!showFullList);
     };
 
-    const movieListDisplay = showFullList ? fullMovieList : movieList.slice(0, 10);
+    const movieListDisplay = showFullList ? movieList : movieList.slice(0, 10);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
 
     return (
         <section className='movies-list'>
