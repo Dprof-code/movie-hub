@@ -65,26 +65,20 @@ input:focus {
     background-color: #9F1239;
 }
 
-@media only screen and (max-width: 768px) {
-    .search-wrap {
-        position: relative;
-        width: 400px;
-        border: 0;
-        display: flex;
-        justify-content: center;
-    }
 
-    form {
-        border: 1px solid #ffffff;
-        position: absolute;
-        top: 20px;
-        display: flex;
-        justify-content: space-between;
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .nav-con {
+        flex-direction: column;
         align-items: center;
-        width: 300px;
     }
 
-    .input-box {
-        width: 80%;
+    .logo-wrap {
+        margin-bottom: 1rem;
+    }
+
+    .search-wrap {
+        margin-bottom: 1rem;
+        width: 100%;
     }
 }
